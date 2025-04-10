@@ -60,7 +60,7 @@ O projeto requer os seguintes elementos:
 
 * Docker
 
-* Python >=3
+* Python >=3.9
 
 * Uma conta Snowflake.
 
@@ -78,11 +78,11 @@ Entre na pasta ```scripts``` e use o arquivo ```snowflake-setup.sql``` como base
 ### Como utilizar o projeto?
 Faça clone com o comando:
 ```
-git clone https://github.com/wlcamargo/dbt-snowflake-airflow.git
+git clone .git
 ```
 Entre na pasta do projeto
 ```
-cd dbt-snowflake-airflow
+cd dbt_cursos
 ```
 Rode o container do Airflow com o comando:
 ```
@@ -97,7 +97,7 @@ Resultado esperado:
 ## Como acessar o Airflow?
 Digite no navegador:
 ```
-localhost:8081
+localhost:8080
 ```
 
 ---------------------------------------------
@@ -119,17 +119,7 @@ password: airflow
 ## Como instalar o dbt?
 ### Crie o ambiente virtual
 ```
-python3 -m venv venv
-```
-
-### Ative o ambiente virtual (Linux)
-```
-source venv/bin/activate
-```
-
-### Ative o ambiente virtual (Windows)
-```
-venv/Scripts/Activate
+poetry init
 ```
 
 ### No ambiente virtual ativo instale as libs

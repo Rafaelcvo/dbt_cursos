@@ -1,5 +1,5 @@
 [project]
-name = "dbt"
+name = "dbt-cursos"
 version = "0.1.0"
 description = ""
 authors = [
@@ -8,6 +8,7 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
+    "dbt (>=1.0.0.38.38,<2.0.0.0.0)"
 ]
 
 
