@@ -124,7 +124,8 @@ poetry init
 
 ### No ambiente virtual ativo instale as libs
 ```
-pip install -r requirements.txt
+poetry add dbt
+poetry add dbt-snowflake
 ```
 
 ## Como verificar se o dbt foi instalado?
