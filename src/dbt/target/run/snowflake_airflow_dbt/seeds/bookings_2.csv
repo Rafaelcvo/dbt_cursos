@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "DBT_DEV_DB"."JM"."BOOKINGS_2";
+    -- dbt seed --
+    
+            insert into DBT_DEV_DB.JM.bookings_2 (id, booking_reference, hotel, booking_date, cost) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)
+        
+
+;
+  

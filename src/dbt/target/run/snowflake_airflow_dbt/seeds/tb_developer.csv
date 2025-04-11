@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "DBT_DEV_DB"."JM"."TB_DEVELOPER";
+    -- dbt seed --
+    
+            insert into DBT_DEV_DB.JM.tb_developer (id, name) values
+            (%s,%s),(%s,%s)
+        
+
+;
+  
