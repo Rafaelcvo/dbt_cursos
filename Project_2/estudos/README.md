@@ -1,13 +1,30 @@
-# Projeto: Análise de Dados Doctoralia Brasil
+# Projeto Doctoralia Brasil — Análise de Dados com dbt
 
-Este projeto utiliza dbt (data build tool) para análise e transformação de dados do dataset Doctoralia Brasil, disponível no Kaggle. O objetivo é demonstrar práticas de engenharia e análise de dados utilizando dbt, facilitando a criação de modelos analíticos reprodutíveis e escaláveis.
+## Descrição
+
+Este projeto utiliza o dbt (data build tool) para transformar e analisar dados públicos de profissionais de saúde da plataforma Doctoralia Brasil. O objetivo é demonstrar boas práticas de engenharia de dados, modelagem analítica e automação de pipelines de dados.
+
+## Sumário
+
+- [Descrição](#descrição)
+- [Sumário](#sumário)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Como usar](#como-usar)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Sobre o Dataset](#sobre-o-dataset)
+- [Contribuição](#contribuição)
+- [Referências](#referências)
 
 ## Pré-requisitos
-- Python 3.7+
-- dbt (recomendado instalar via pip ou poetry)
+
+- Python 3.7 ou superior
+- dbt-core
 - [Poetry](https://python-poetry.org/) (opcional, para gerenciamento de dependências)
+- Git
 
 ## Instalação
+
 1. Clone este repositório:
    ```bash
    git clone https://github.com/Rafaelcvo/dbt_cursos/tree/develop/Project_2
@@ -16,12 +33,13 @@ Este projeto utiliza dbt (data build tool) para análise e transformação de da
    ```bash
    poetry install
    ```
-   Ou instale o dbt diretamente:
+   Ou, se preferir, instale o dbt diretamente:
    ```bash
    pip install dbt-core
    ```
 
 ## Como usar
+
 1. Navegue até a pasta do projeto:
    ```bash
    cd Project_2/estudos
@@ -36,20 +54,32 @@ Este projeto utiliza dbt (data build tool) para análise e transformação de da
    ```
 
 ## Estrutura do Projeto
-- `models/` - Modelos SQL transformacionais do dbt
-- `data_csv/` - Arquivos CSV de dados brutos
-- `macros/` - Macros customizadas para uso nos modelos
-- `snapshots/` - Snapshots de dados para controle de mudanças
-- `tests/` - Testes customizados do dbt
-- `logs/` - Logs de execução
-- `src/` - Scripts auxiliares (ex: consultas, ETL)
 
-## Dataset
+```
+estudos/
+├── data_csv/         # Dados brutos em CSV
+├── models/           # Modelos SQL do dbt
+├── macros/           # Macros customizadas
+├── snapshots/        # Snapshots de dados
+├── tests/            # Testes customizados
+├── src/              # Scripts auxiliares
+├── logs/             # Logs de execução
+├── dbt_project.yml   # Configuração principal do dbt
+└── README.md         # Este arquivo
+```
+
+## Sobre o Dataset
+
 - **Fonte:** [Doctoralia Brasil - Kaggle](https://www.kaggle.com/datasets/miguelcorraljr/doctoralia-brasil)
 - **Descrição:** Dados públicos de profissionais de saúde cadastrados na plataforma Doctoralia Brasil.
-- O arquivo principal utilizado está em `data_csv/202210_doctoralia_br.csv`.
+- **Arquivo principal:** `data_csv/202210_doctoralia_br.csv`
 
-## Referências e Recursos
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias, correções ou sugestões.
+
+## Referências
+
 - [Documentação oficial do dbt](https://docs.getdbt.com/docs/introduction)
 - [Comunidade dbt no Slack](https://community.getdbt.com/)
 - [Blog dbt](https://blog.getdbt.com/)
