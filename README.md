@@ -1,5 +1,5 @@
 # Engenharia de Dados com Apache Airflow, Snowflake e dbt
-## Creditos: Wallace Camargo
+## Créditos: Wallace Camargo
 
 Repositório do projeto "Engenharia de Dados com Apache Airflow, Snowflake e dbt". Este projeto é baseado no seguinte Guia Snowflake para engenharia de dados com Apache Airflow, Snowflake e dbt.
 
