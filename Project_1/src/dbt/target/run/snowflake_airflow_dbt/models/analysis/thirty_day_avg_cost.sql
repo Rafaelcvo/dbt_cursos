@@ -1,0 +1,17 @@
+
+  create or replace   view DBT_DEV_DB.analysis.thirty_day_avg_cost
+  
+   as (
+    SELECT
+  BOOKING_DATE,
+  HOTEL,
+  COST,
+  AVG(COST) OVER (
+    ORDER BY BOOKING_DATE ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
+  ) as "30_DAY_AVG_COST",
+  COST -   AVG(COST) OVER (
+    ORDER BY BOOKING_DATE ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
+  ) as "DIFF_BTW_ACTUAL_AVG"
+FROM DBT_DEV_DB.transform.prepped_data
+  );
+

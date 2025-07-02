@@ -3,13 +3,14 @@ name = "dbt-cursos"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Rafael",email = "rafaelmoreiracvo@gmail.com"}
+    {name = "Rafael Moreira",email = "rafaelmoreiracvo@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 dependencies = [
-    "dbt (>=1.0.0.38.38,<2.0.0.0.0)",
-    "dbt-snowflake (>=1.9.2,<2.0.0)"
+    "dbt-core (>=1.10.2,<2.0.0)",
+    "dbt-duckdb (>=1.9.4,<2.0.0)",
+    "duckdb (>=1.3.1,<2.0.0)"
 ]
 
 

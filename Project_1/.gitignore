@@ -1,0 +1,3 @@
+logs/
+.env
+src\dbt\profiles.yml

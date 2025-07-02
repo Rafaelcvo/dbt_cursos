@@ -1,0 +1,18 @@
+[project]
+name = "dbt-cursos"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Rafael",email = "rafaelmoreiracvo@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "dbt (>=1.0.0.38.38,<2.0.0.0.0)",
+    "dbt-snowflake (>=1.9.2,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
